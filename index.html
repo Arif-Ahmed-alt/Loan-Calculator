@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+  <style>
+    .loading{
+      display: none;
+    }
+    .result_filed{
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+ <div class="container">
+   <div class="row w-75 mx-auto">
+     <div class="col-12">
+      <div class="card" >
+        <div class="card-body">
+          <h1 class="card-title display-5 text-center">Loan Calculator</h1>
+          <div class="input_field mb-2">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">$</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Input your amount for loan" id="amount">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">%</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Input interest rate" id="interest">
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="year" placeholder="Input year to repay">
+            </div>
+            <button class="btn btn-block btn-dark">Calculate</button>
+          </div>
+          <div class="loading text-center">
+            <img src="loading.gif" alt="" class="w-25">
+          </div>
+          <div class="result_filed mt-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Monthly Payment</span>
+              </div>
+              <input type="text" class="form-control"  id="monthly_payment">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Total Payment</span>
+              </div>
+              <input type="text" class="form-control"  id="total_payment">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Total Interest</span>
+              </div>
+              <input type="text" class="form-control"  id="total_interest">
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+ </div>
+  <script src="project.js"></script>
+</body>
+</html>
